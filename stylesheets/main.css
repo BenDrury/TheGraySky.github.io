@@ -1,0 +1,1145 @@
+/*
+* PHIL - Signature Edition | Premium Web Template from Designova
+* Build: Sep 2015;
+* Author: Designova, http://www.designova.net
+* Copyright (C) 2015 Designova
+* This is a premium product. For licensing queries please contact info@designova.net
+*/
+
+
+/* Table of contents
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+- 1. Common
+- 2. Preloader
+- 3. Header
+- 4. Footer
+- 5. Navigation
+- 6. Pages
+- 7. Utilities
+- 8. Background Images (Set your BG images here)
+- 9. Media Queries (Mobile Specific Styles)
+*/
+
+
+/* 1. Common
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body{
+  overflow-x: hidden;
+}
+body{
+Background:#111;
+
+  }
+
+p{
+	font-family:'Anonymous Pro';
+	font-size:20px;
+	text-align:justify;
+	line-height:auto;
+	
+}
+h1,h2,h6{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Quicksand';
+}
+
+h2{
+	font-size:29px;
+	font-family: 'Anonymous Pro';
+	padding-top:8px;
+	text-transform:none;
+	line-height:auto;
+	padding-bottom:5px;
+
+}
+
+h5{
+	font-size: 18px;
+	font-family: 'Quicksand';
+	padding-top:0px;
+	padding-bottom:0px;
+	letter-spacing: 0px;
+	text-transform:none;
+	line-height:0px;
+}
+
+mark {
+    background-color: #FF51ED;
+    color: #111;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+h3{
+	font-size: 23px;
+	font-family: 'Quicksand';
+	line-height:auto;
+	letter-spacing:0px;
+	text-transform:none;
+	
+}
+
+h4{
+	font-family: 'Quicksand';
+	letter-spacing: 1px;
+	font-size: 32px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+a{
+  text-decoration:none !important;
+}
+a:focus { 
+      outline: none; 
+}
+.promo-heading{
+  font-size: 24px;
+  line-height: 31px;
+}
+.sub-heading{
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  padding-bottom: 8px;
+  font-family: 'Quicksand';
+}
+
+
+
+/* Tooltip */
+ .tooltip > .tooltip-inner {
+      background-color: #111; 
+      color: #FF93F2; 
+	  text-shadow: 0 0 5px #FF51ED;
+      padding: 5px;
+      font-family: 'Anonymous Pro';
+	font-size:24px;
+	line-height:30px;
+	font-weight:normal;
+	letter-spacing: 1px;
+  }
+
+
+hr.style-one { 
+border-top: 0px; 
+height: 1px; 
+background: #ccc; 
+/* background-image: linear-gradient(to right, #dddddd, #999999, #dddddd); */
+}
+
+button.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding-bottom: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size:30px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: transparent; 
+	 color: #FF93F2;
+  text-shadow: 0 0 5px #FF51ED;
+}
+
+div.panel {
+    padding: 0px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+
+/* 2. Preloader
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body.preloader-running{ 
+  overflow: hidden; 
+}
+
+div#preloader.signature-phil { 
+  background: none repeat scroll 0 0 white; 
+  height: 100%; 
+  left: 0; 
+  position: fixed;
+  top: 0px; 
+  width: 100%; 
+  z-index: 99999; 
+}
+
+#status { 
+  width: 200px; 
+  height: 200px; 
+  position: fixed; 
+  left: 50%; 
+  top: 50%; 
+  background-image: url(../images/loader.gif); 
+  background-size: 100px 100px;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: -100px 0 0 -100px; 
+}
+
+/* 3. Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header.masthead.signature-phil{
+  padding: 0px 0;
+  border-bottom:solid 1.5px;
+  padding-top:15%;
+}
+.logo{
+  font-family:'Orbitron';
+  text-transform: none;
+  letter-spacing: 2px;
+  font-size: 65px;
+  line-height: auto;
+  font-weight:normal;
+  padding-bottom:5px;
+  text-shadow: 0 0 5px #63FFEA;
+}
+
+/* 4. Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer.mastfoot.signature-phil{
+  overflow: hidden;
+  padding: 20px 0;
+  border-top:solid 1.5px;
+}
+.social-icons{
+  font-size: 60px;
+  padding: 0;
+  margin-bottom: -5px;
+}
+.social-icons li{
+  display: inline-block;
+}
+.social-icons li a span{
+  font-size:40px;
+            -webkit-transition: all .4s linear;
+               -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                 -o-transition: all .4s linear;
+                    transition: all .4s linear;
+}
+.social-icons li a:hover span{
+  font-size: 40px;
+            -webkit-transition: all .4s linear;
+               -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                 -o-transition: all .4s linear;
+                    transition: all .4s linear;
+}
+
+.social-icons-big{
+  list-style: none;
+}
+.social-icons-big li{
+  display: inline;
+  margin-top:-5px;
+  margin-bottom:-5px;
+  margin-right:40px;
+}
+.social-icons-big li a span{
+  font-size: 80px;
+  
+
+           /*  -webkit-transition: all .2s linear;
+               -moz-transition: all .2s linear;
+                -ms-transition: all .2s linear;
+                 -o-transition: all .2s linear;
+                    transition: all .2s linear; */
+}
+.social-icons-big li a:hover span{
+  font-size: 80px;
+/* 
+            -webkit-transition: all .2s linear;
+               -moz-transition: all .2s linear;
+                -ms-transition: all .2s linear;
+                 -o-transition: all .2s linear;
+                    transition: all .2s linear; */
+}
+.credits p{
+  font-size: 13px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+/* 5. Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav.mastnav.signature-phil{
+  border-top: solid 2px #121212;
+  margin-top: 25px;
+  padding-top: 0px;
+  font-family: 'Quicksand';
+}
+.navigation ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.navigation ul li{
+  display: inline-block;
+  margin: 0 5px;
+}
+.navigation a{
+  display: inline-block;
+  margin: 0 0px;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.navigation a, .navigation a:hover{
+            -webkit-transition: all .4s linear;
+               -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                 -o-transition: all .4s linear;
+                    transition: all .4s linear;
+}
+
+/* 6. Pages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section.mastwrap.signature-phil{
+  overflow: hidden;
+}
+/*INTRO*/
+.niceGallery{
+  min-height: 300px;
+}
+.niceGallery-preloader{
+  z-index: -1;
+  width: 200px; 
+  height: 200px; 
+  position: fixed; 
+  left: 50%; 
+  top: 50%; 
+  background-image: url(../images/loader.gif); 
+  background-size: 100px 100px;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: -100px 0 0 -100px; 
+}
+.intro.signature-phil{
+  margin-top: -120px;
+}
+.intro-carousel, .intro-carousel.signature-phil .item, .intro-carousel.signature-phil img{
+  height: 500px;
+}
+.owl-controls{
+  cursor: pointer;
+}
+.album-info{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.album-info h3{
+  opacity: 0;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.album-info h6{
+  opacity: 0;
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.album-info:hover h3, .album-info:hover h6{
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+        .album-view:hover{
+            cursor: url("../images/view.png") 40 40, crosshair;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+        }
+
+/*ABOUT*/
+.profile-pic{
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.content-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content-list li{
+  margin-bottom: 5px;
+}
+.content-list li span{
+  border-bottom: solid 1px;
+  font-size: 13px;
+  line-height: 22px;
+}
+.clients{
+  margin-top: 15px;
+}
+.common-main-heading.signature-phil{    
+    font-size: 22px;
+    letter-spacing: 5px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.common-main-heading.signature-phil > span{
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.common-sub-heading{
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.common-sub-heading-big{
+  font-size: 64px;
+  line-height: 78px;
+  margin-bottom: 20px;
+}
+
+/*WORKS*/
+
+.works-filter-panel.signature-phil{
+  padding: 0px;
+}
+.works-filter-wrap{
+}
+
+.works-filter.signature-phil{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  
+  
+}
+.works-filter.signature-phil li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.works-filter.signature-phil li a{
+  font-size: 24px;
+  font-family:'Quicksand';
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight:bold;
+  letter-spacing: 0px;
+  font-weight:;
+  color: #fff;
+
+}
+
+.works-filter.signature-phil li:after{
+  content: '/';
+  font-size: 24px;
+  font-family:'Quicksand';
+  line-height: 32px;
+  margin-left: 20px;
+  color: #fff;
+
+}
+.works-filter.signature-phil li:last-child:after{
+    display: none;
+}
+
+/* .works-filter-panel.signature-phil{
+display: none;
+  width: 300px;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 80px;
+}
+.works-filter-wrap{
+}
+.filter-notification.signature-phil{
+    margin-left: 10px;
+}
+.filter-notification.signature-phil{
+    font-size: 14px;
+}
+.works-filter.signature-phil{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.works-filter.signature-phil li{
+  display: block;
+  margin-bottom: 5px;
+}
+.works-filter.signature-phil li a{
+  font-size: 14px;
+  line-height: 21px;
+} */
+.works-container.signature-phil{
+  padding: 0;
+  margin: 70px auto 0 auto;
+  overflow: hidden;
+  
+}
+.works-filter.signature-phil li:last-child:after{
+    display: none;
+}
+
+ .works-item.signature-phil{
+  overflow: hidden;
+ 
+ }
+ .works-item.signature-phil a{
+  background-color:rgba(0,0,0,0.4);
+            opacity: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+			font-family:'Quicksand';
+            top: 0;
+            z-index: 100;
+            text-align: center;
+            text-decoration: none !important;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+        }
+    .works-item.signature-phil a:hover{
+            text-decoration: none !important;
+            opacity:1;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+        }
+        /* .info a:hover{
+            cursor: url("../images/plus.png") 40 40, crosshair;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+        }
+        .zoom a:hover{
+            cursor: url("../images/zoom.png") 40 40, crosshair;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+        } */
+        .works-item-inner{
+            text-align: left;
+            padding: 0 100px;
+        }
+        .works-thumbnails-view{
+          margin-top: 40px;
+        }
+        .works-thumbnails-view .works-item-inner{
+            text-align: center;
+            padding: 40px;
+        }
+        .works-thumbnails-view .works-item-inner p > span {
+            font-size: 26px;
+			font-family:'Quicksand';
+            letter-spacing: 1px;
+            line-height: 28px;
+            margin-top: 0;
+            padding-bottom: 5px;
+            text-transform: none;
+			font-weight:800px;
+        }
+        .works-item-inner h3 > span{ 
+            font-size: 12px;
+			font-family:'Quicksand';
+            letter-spacing: normal;
+            line-height: 19px;
+            text-transform: none;
+            margin-bottom: 5px;
+            border-bottom: solid 1px;
+            font-weight: 200;
+        }
+        .works-item-inner p > span{  
+            font-size: 18px;
+			font-family:'Quicksand';
+            line-height: 25px;
+            letter-spacing: 4px;
+            margin-top: 0px;
+            text-transform: uppercase;
+			font-weight:200;
+        }
+        .works-item.signature-phil a:hover 
+        .works-item-inner h3{ 
+        }
+        .works-item.signature-phil a:hover 
+        .works-item-inner p{  
+        }
+
+.works-item-fade{
+  opacity: 0.8;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+
+.works-item-fade a{
+  display: none !important;
+}
+.works-masonry-container{
+    padding: 0;
+  margin:0px !important;
+}
+.works-masonry-container .works-item-one-third {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 33.3% !important;
+}
+.works-masonry-container .works-item-two-third {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 66.6% !important;
+}
+.works-masonry-container .works-item-one-half {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 50% !important;
+}
+.works-masonry-container .works-item-one-fourth {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 25% !important;
+}
+.works-masonry-container .works-item-full-width {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+.works-masonry-container .works-item-one-third-spaced{
+  margin: 1% !important;
+  padding: 0 !important;
+  width: 31.3% !important;
+}
+.works-masonry-container .works-item-one-half-spaced{
+  margin: 1% !important;
+  padding: 0 !important;
+  width: 48% !important;
+}
+.works-masonry-container .works-item-two-third-spaced{
+  margin: 1% !important;
+  padding: 0 !important;
+  width: 64.6% !important;
+}
+.works-masonry-container .works-item-one-fourth-spaced{
+  margin: 1% !important;
+  padding: 0 !important;
+  width: 23% !important;
+
+}
+
+
+/* 6. Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Portfolio Isotope Transitions */ 
+
+.isotope, .isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+/*NEWS*/
+.news-date{
+  font-size: 24px;
+  line-height: 55px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-decoration: uppercase;
+  font-family: 'Quicksand';
+}
+.news-date > span{
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.news-heading{
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  border-bottom: solid 2px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Quicksand';
+}
+.news-heading-big{
+  font-size: 64px;
+  line-height: 78px;
+  margin-bottom: 20px;
+  border-top: solid 4px;
+  padding-top: 15px;
+  font-family: 'Quicksand';
+}
+/*WORKS*/
+.work-collection-title{
+  font-size: 32px;
+  line-height: 39px;
+}
+.intro-carousel.signature-phil .item{
+  background-color: #000;
+}
+/*PROJECT*/
+/* .project-navigation{
+  list-style: none;
+  padding: 0;
+}
+.project-navigation li{
+  display: inline-block;
+}
+.project-navigation li a{
+  font-size: 22px;
+  line-height: 29px;
+}
+.project-navigation li:after{
+  content: ' / ';
+  font-size: 22px;
+  line-height: 29px;
+}
+.project-navigation li:last-child:after{
+  display: none;
+} */
+
+.project-nav-icon-wrap{
+  list-style-type: none;
+  padding: 0px 0;
+  text-align: center;
+}
+.project-nav-icon-wrap li{
+  display: inline-block;
+  margin:10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0%;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+     -o-transition: all .2s linear;
+      transition: all .2s linear;
+}
+.project-nav-icon-wrap li:hover{
+	background-color: #63bb82;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+     -o-transition: all .2s linear;
+      transition: all .2s linear;
+}
+.project-nav-icon-wrap li a{
+
+}
+.project-nav-icon-wrap li a img{
+  width: 30px;
+}
+
+/* 7. Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*Buttons*/
+.btn-signature{
+  border-radius: 10px;
+  font-family:'Quicksand';
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight:normal;
+  font-size: 23px;
+  line-height: auto;
+  text-transform: uppercase;
+  letter-spacing:0px;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.btn-signature-big{
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.btn-signature:hover{
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.btn-signature-white{
+  border:solid 1.5px #fff;
+  background: transparent;
+  color: #fff;
+}
+.btn-signature-white:hover{
+  border:solid 1.5px #fff;
+  background: #fff;
+  color: #000;
+  border-radius: 5%;
+}
+
+.btn-signature-dark{
+  border:solid 1.5px #222;
+  background: transparent;
+  color: #222;
+}
+.btn-signature-dark:hover{
+  border:solid 1.5px #63bb82;
+  background: #63bb82;
+  color: #fff;
+    -webkit-transition: all .1s linear;
+     -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+     -o-transition: all .1s linear;
+      transition: all .1s linear;
+}
+
+.btn-signature-color{
+  border:solid 1.5px;
+  background: transparent;
+}
+.btn-signature-color:hover{
+  border:solid 1.5px;
+  color: #fff;
+}
+.add-top{
+    margin-top: 80px;
+}
+.add-bottom{
+    margin-bottom: 80px;
+}
+.add-top-half{
+    margin-top: 40px;
+}
+.add-bottom-half{
+    margin-bottom: 40px;
+}
+.add-bottom-60{
+    margin-bottom: 60px;
+}
+
+.add-top-10{
+    margin-top: 10%;
+}
+.add-bottom-100{
+    margin-bottom: 100px;
+}
+.add-top-100{
+    margin-top: 20%;
+}
+.add-top-quarter{
+    margin-top: 20px;
+}
+.add-bottom-quarter{
+    margin-bottom: 20px;
+}
+.pad-top{
+    padding-top: 80px;
+}
+.pad-bottom{
+    padding-bottom: 80px;
+}
+.pad-top-half{
+    padding-top: 40px;
+}
+.pad-bottom-half{
+    padding-bottom: 40px;
+}
+.pad-top-quarter{
+    padding-top: 20px;
+}
+.pad-bottom-quarter{
+    padding-bottom: 20px;
+}
+
+.pad-sides{
+    padding-left: 30px;
+	padding-right: 30px;
+}
+.ease{
+            -webkit-transition: all .4s linear;
+               -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                 -o-transition: all .4s linear;
+                    transition: all .4s linear;
+}
+.ease:hover{
+            -webkit-transition: all .4s linear;
+               -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                 -o-transition: all .4s linear;
+                    transition: all .4s linear;
+}
+.no-pad{
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+}
+.valign{
+  position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img-bg{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.parallax{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+/*this class will be activated on mobile devices in order to switch off the parallax effect*/
+.parallax-off {
+  background-attachment:scroll !important;
+  background-size:cover !important;
+}
+
+.poster-img{
+  background:url(../images/poster.jpg) center center no-repeat !important;
+  background-size: cover !important;
+}
+
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*LESS Compiled to CSS for preview purposes only 
+(Please read PDF guide to manage colors via LESS with just a single line of code editing)*/
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+.color {
+  color: #FF51ED;
+}
+
+.dark-blue {
+color: #23FFE1;
+}
+.white {
+  color: #fff;
+}
+
+.blue {
+  color: #5FEFDE;
+}
+
+.palepink {
+	color: #FF93F2;
+}
+
+.p-color {
+	color: #C6FFF6;
+}
+.pink {
+  color: #C6FFF6;
+}
+.silver {
+  color: #f1f1ef;
+}
+.grey {
+  color: #999999;
+}
+.dark {
+  color: #111;
+}
+.black {
+  color: #121212;
+}
+.color-bg {
+  background-color: #C6FFF6;
+}
+.white-bg {
+  background-color: #ffffff;
+}
+.silver-bg {
+  background-color: #f1f1ef;
+}
+.grey-bg {
+  background-color: #999999;
+}
+.dark-bg {
+  background-color: #292929;
+}
+.black-bg {
+  background-color: #121212;
+}
+.mint-bg {
+  background-color: #DAEFE1;
+}
+a {
+  color: #121212;
+}
+a:hover {
+  color: #FF51ED;
+}
+::selection {
+  background: #FF51ED;
+  color: #111;
+}
+::-moz-selection {
+  background: #FF51ED;
+  color: #111;
+}
+body,
+p {
+  color: #222222;
+}
+.masthead.signature-phil .container {
+  border-color: #292929;
+}
+.navigation a {
+  color: #292929;
+}
+.navigation a:hover,
+.social-icons li a:hover span {
+  color: #63bb82;
+}
+.navigation a:hover,
+.social-icons-big li a:hover span {
+  color: #23FFE1;
+  text-shadow: 0 0 10px #63FFEA;
+.content-list li span {
+  border-color: #cccccc;
+}
+#nav-trigger span:hover {
+  background-color: #2da86b;
+}
+nav#nav-mobile ul {
+  background-color: #292929;
+}
+nav#nav-mobile a:hover {
+  background-color: #2da86b;
+}
+.works-thumbnails-view .works-item-inner p > span {
+  border-color: #ffffff;
+}
+.news-heading,
+.news-heading-big {
+  border-color: #f1f1ef;
+}
+.font1 {
+  font-family: 'Anonymous Pro';
+}
+.font2 {
+  font-family: 'Orbitron';
+}
+body,
+p {
+  font-family: 'Anonymous Pro';
+}
+nav#nav-mobile a {
+  font-family: 'Quicksand';
+}
+.niceGallery ul.entries-columns li h4,
+.viewbox .panel .number,
+.viewbox .panel h3 {
+  font-family: 'Quicksand';
+}
+.niceGallery ul.entries-columns li a .show {
+  font-family: 'Quicksand';
+}
+.viewbox .details h2 {
+  font-family: 'Quicksand';
+}
+
