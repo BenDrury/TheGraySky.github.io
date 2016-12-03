@@ -27,24 +27,67 @@ html, body{
   overflow-x: hidden;
 }
 body{
-  border-left: solid 100px #fff; 
-  border-right: solid 100px #fff; 
-}
+Background:#111;
+
+  }
+
 p{
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 0;
+	font-family:'Anonymous Pro';
+	font-size:20px;
+	text-align:justify;
+	line-height:auto;
+	
 }
-h1,h2,h4,h5,h6{
+h1,h2,h6{
   margin-top: 0;
   margin-bottom: 0;
-  
+  font-family: 'Quicksand';
 }
+
+h2{
+	font-size:29px;
+	font-family: 'Anonymous Pro';
+	padding-top:8px;
+	text-transform:none;
+	line-height:auto;
+	padding-bottom:5px;
+
+}
+
+h5{
+	font-size: 18px;
+	font-family: 'Quicksand';
+	padding-top:0px;
+	padding-bottom:0px;
+	letter-spacing: 0px;
+	text-transform:none;
+	line-height:0px;
+}
+
+mark {
+    background-color: #FF51ED;
+    color: #111;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
 h3{
-	font-size: 24px;
-	letter-spacing: 5px;
-	line-height: 0px;
+	font-size: 23px;
+	font-family: 'Quicksand';
+	line-height:auto;
+	letter-spacing:0px;
+	text-transform:none;
+	
 }
+
+h4{
+	font-family: 'Quicksand';
+	letter-spacing: 1px;
+	font-size: 32px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
 a{
   text-decoration:none !important;
 }
@@ -56,13 +99,72 @@ a:focus {
   line-height: 31px;
 }
 .sub-heading{
-  font-size: 22px;
+  font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px;
   padding-bottom: 8px;
+  font-family: 'Quicksand';
 }
+
+
+
+/* Tooltip */
+ .tooltip > .tooltip-inner {
+      background-color: #111; 
+      color: #FF93F2; 
+	  text-shadow: 0 0 5px #FF51ED;
+      padding: 5px;
+      font-family: 'Anonymous Pro';
+	font-size:24px;
+	line-height:30px;
+	font-weight:normal;
+	letter-spacing: 1px;
+  }
+
+
+hr.style-one { 
+border-top: 0px; 
+height: 1px; 
+background: #ccc; 
+/* background-image: linear-gradient(to right, #dddddd, #999999, #dddddd); */
+}
+
+button.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding-bottom: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size:30px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: transparent; 
+	 color: #FF93F2;
+  text-shadow: 0 0 5px #FF51ED;
+}
+
+div.panel {
+    padding: 0px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
 
 /* 2. Preloader
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -96,32 +198,38 @@ div#preloader.signature-phil {
 /* 3. Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header.masthead.signature-phil{
-  padding: 40px 0;
+  padding: 0px 0;
+  border-bottom:solid 1.5px;
+  padding-top:15%;
 }
 .logo{
-  text-transform: uppercase;
-  letter-spacing: 11px;
-  font-size: 36px;
-  line-height: 30px;
+  font-family:'Orbitron';
+  text-transform: none;
+  letter-spacing: 2px;
+  font-size: 65px;
+  line-height: auto;
+  font-weight:normal;
+  padding-bottom:5px;
+  text-shadow: 0 0 5px #63FFEA;
 }
 
 /* 4. Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer.mastfoot.signature-phil{
   overflow: hidden;
-  padding: 30px 0;
+  padding: 20px 0;
+  border-top:solid 1.5px;
 }
 .social-icons{
-  list-style: none;
+  font-size: 60px;
   padding: 0;
-  margin: 0;
+  margin-bottom: -5px;
 }
 .social-icons li{
   display: inline-block;
-  margin: 0 5px;
 }
 .social-icons li a span{
-  font-size: 24px;
+  font-size:40px;
             -webkit-transition: all .4s linear;
                -moz-transition: all .4s linear;
                 -ms-transition: all .4s linear;
@@ -129,32 +237,61 @@ footer.mastfoot.signature-phil{
                     transition: all .4s linear;
 }
 .social-icons li a:hover span{
-  font-size: 24px;
+  font-size: 40px;
             -webkit-transition: all .4s linear;
                -moz-transition: all .4s linear;
                 -ms-transition: all .4s linear;
                  -o-transition: all .4s linear;
                     transition: all .4s linear;
 }
+
+.social-icons-big{
+  list-style: none;
+}
+.social-icons-big li{
+  display: inline;
+  margin-top:-5px;
+  margin-bottom:-5px;
+  margin-right:40px;
+}
+.social-icons-big li a span{
+  font-size: 80px;
+  
+
+           /*  -webkit-transition: all .2s linear;
+               -moz-transition: all .2s linear;
+                -ms-transition: all .2s linear;
+                 -o-transition: all .2s linear;
+                    transition: all .2s linear; */
+}
+.social-icons-big li a:hover span{
+  font-size: 80px;
+/* 
+            -webkit-transition: all .2s linear;
+               -moz-transition: all .2s linear;
+                -ms-transition: all .2s linear;
+                 -o-transition: all .2s linear;
+                    transition: all .2s linear; */
+}
 .credits p{
-  font-size: 15px;
+  font-size: 13px;
   line-height: 20px;
+  display: inline-block;
 }
 
 /* 5. Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav.mastnav.signature-phil{
-  border-top: solid 2px #cccccc;
-  border-bottom: solid 2px #cccccc;
+  border-top: solid 2px #121212;
   margin-top: 25px;
   padding-top: 0px;
-  
+  font-family: 'Quicksand';
 }
 .navigation ul{
   list-style: none;
   padding: 0;
-  margin-top: 0px;
-  margin-bottom: 15px;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 .navigation ul li{
   display: inline-block;
@@ -163,8 +300,8 @@ nav.mastnav.signature-phil{
 .navigation a{
   display: inline-block;
   margin: 0 0px;
-  font-size: 18px;
-  line-height: 12px;
+  font-size: 16px;
+  line-height: 0px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -261,7 +398,7 @@ section.mastwrap.signature-phil{
 
 /*ABOUT*/
 .profile-pic{
-  width: 250px;
+  width: 100px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -275,18 +412,17 @@ section.mastwrap.signature-phil{
 }
 .content-list li span{
   border-bottom: solid 1px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 22px;
 }
 .clients{
   margin-top: 15px;
 }
 .common-main-heading.signature-phil{    
-    font-size: 26px;
-    letter-spacing: 16px;
+    font-size: 22px;
+    letter-spacing: 5px;
     line-height: 40px;
     margin-bottom: 10px;
-	letter-spacing:2px;
     text-transform: uppercase;
 }
 .common-main-heading.signature-phil > span{
@@ -309,6 +445,50 @@ section.mastwrap.signature-phil{
 /*WORKS*/
 
 .works-filter-panel.signature-phil{
+  padding: 0px;
+}
+.works-filter-wrap{
+}
+
+.works-filter.signature-phil{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  
+  
+}
+.works-filter.signature-phil li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.works-filter.signature-phil li a{
+  font-size: 24px;
+  font-family:'Quicksand';
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight:bold;
+  letter-spacing: 0px;
+  font-weight:;
+  color: #fff;
+
+}
+
+.works-filter.signature-phil li:after{
+  content: '/';
+  font-size: 24px;
+  font-family:'Quicksand';
+  line-height: 32px;
+  margin-left: 20px;
+  color: #fff;
+
+}
+.works-filter.signature-phil li:last-child:after{
+    display: none;
+}
+
+/* .works-filter-panel.signature-phil{
 display: none;
   width: 300px;
   z-index: 9999;
@@ -337,11 +517,12 @@ display: none;
 .works-filter.signature-phil li a{
   font-size: 14px;
   line-height: 21px;
-}
+} */
 .works-container.signature-phil{
-    padding: 0;
+  padding: 0;
   margin: 70px auto 0 auto;
   overflow: hidden;
+  
 }
 .works-filter.signature-phil li:last-child:after{
     display: none;
@@ -349,14 +530,16 @@ display: none;
 
  .works-item.signature-phil{
   overflow: hidden;
+ 
  }
  .works-item.signature-phil a{
-  background-color:rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0.4);
             opacity: 0;
             display: block;
             width: 100%;
             height: 100%;
             position: absolute;
+			font-family:'Quicksand';
             top: 0;
             z-index: 100;
             text-align: center;
@@ -376,7 +559,7 @@ display: none;
                  -o-transition: all .4s ease-in-out;
                     transition: all .4s ease-in-out;
         }
-        .info a:hover{
+        /* .info a:hover{
             cursor: url("../images/plus.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
@@ -391,7 +574,7 @@ display: none;
                 -ms-transition: all .4s ease-in-out;
                  -o-transition: all .4s ease-in-out;
                     transition: all .4s ease-in-out;
-        }
+        } */
         .works-item-inner{
             text-align: left;
             padding: 0 100px;
@@ -400,34 +583,37 @@ display: none;
           margin-top: 40px;
         }
         .works-thumbnails-view .works-item-inner{
-            text-align: left;
+            text-align: center;
             padding: 40px;
         }
         .works-thumbnails-view .works-item-inner p > span {
-            font-size: 24px;
-            letter-spacing: 4px;
-            line-height: 21px;
+            font-size: 26px;
+			font-family:'Quicksand';
+            letter-spacing: 1px;
+            line-height: 28px;
             margin-top: 0;
-            border-bottom: solid 3px;
             padding-bottom: 5px;
-            text-transform: uppercase;
+            text-transform: none;
+			font-weight:800px;
         }
         .works-item-inner h3 > span{ 
-            font-size: 24px;
-            letter-spacing: 4px;
-            line-height: 21px;
-            margin-top: 20%;
-            border-bottom: solid 3px;
-            padding-bottom: 5px;
-            text-transform: uppercase;
+            font-size: 12px;
+			font-family:'Quicksand';
+            letter-spacing: normal;
+            line-height: 19px;
+            text-transform: none;
+            margin-bottom: 5px;
+            border-bottom: solid 1px;
+            font-weight: 200;
         }
         .works-item-inner p > span{  
-            font-size: 24px;
+            font-size: 18px;
+			font-family:'Quicksand';
+            line-height: 25px;
             letter-spacing: 4px;
-            line-height: 21px;
-            border-bottom: solid 3px;
-            padding-bottom: 5px;
+            margin-top: 0px;
             text-transform: uppercase;
+			font-weight:200;
         }
         .works-item.signature-phil a:hover 
         .works-item-inner h3{ 
@@ -437,7 +623,7 @@ display: none;
         }
 
 .works-item-fade{
-  opacity: 0.1;
+  opacity: 0.8;
   -webkit-transition: all .4s ease-in-out;
      -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
@@ -496,6 +682,7 @@ display: none;
   margin: 1% !important;
   padding: 0 !important;
   width: 23% !important;
+
 }
 
 
@@ -537,9 +724,12 @@ display: none;
 
 /*NEWS*/
 .news-date{
-  font-size: 48px;
+  font-size: 24px;
   line-height: 55px;
   margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-decoration: uppercase;
+  font-family: 'Quicksand';
 }
 .news-date > span{
   font-size: 18px;
@@ -548,11 +738,14 @@ display: none;
   margin-left: 10px;
 }
 .news-heading{
-  font-size: 22px;
+  font-size: 28px;
   line-height: 32px;
-  margin-bottom: 20px;
-  border-top: solid 2px;
-  padding-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: solid 2px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Quicksand';
 }
 .news-heading-big{
   font-size: 64px;
@@ -560,6 +753,7 @@ display: none;
   margin-bottom: 20px;
   border-top: solid 4px;
   padding-top: 15px;
+  font-family: 'Quicksand';
 }
 /*WORKS*/
 .work-collection-title{
@@ -597,43 +791,45 @@ display: none;
 }
 .project-nav-icon-wrap li{
   display: inline-block;
-  margin:30px;
-  background-color: #eee;
+  margin:10px;
+  background-color: #fff;
   padding: 20px;
-  border-radius: 50%;
-  -webkit-transition: all .4s linear;
-     -moz-transition: all .4s linear;
-    -ms-transition: all .4s linear;
-     -o-transition: all .4s linear;
-      transition: all .4s linear;
+  border-radius: 0%;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+     -o-transition: all .2s linear;
+      transition: all .2s linear;
 }
 .project-nav-icon-wrap li:hover{
-  -webkit-transition: all .4s linear;
-     -moz-transition: all .4s linear;
-    -ms-transition: all .4s linear;
-     -o-transition: all .4s linear;
-      transition: all .4s linear;
+	background-color: #63bb82;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+     -o-transition: all .2s linear;
+      transition: all .2s linear;
 }
 .project-nav-icon-wrap li a{
+
 }
 .project-nav-icon-wrap li a img{
   width: 30px;
 }
-
-
 
 /* 7. Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /*Buttons*/
 .btn-signature{
-  border-radius: 0px;
+  border-radius: 10px;
+  font-family:'Quicksand';
   text-decoration: none;
   padding: 10px 15px;
-  font-size: 18px;
-  line-height: 19px;
+  font-weight:normal;
+  font-size: 23px;
+  line-height: auto;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing:0px;
   -webkit-transition: all .4s ease-in-out;
      -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
@@ -662,33 +858,39 @@ display: none;
       transition: all .4s ease-in-out;
 }
 .btn-signature-white{
-  border:solid 2px #fff;
+  border:solid 1.5px #fff;
   background: transparent;
   color: #fff;
 }
 .btn-signature-white:hover{
-  border:solid 2px #fff;
+  border:solid 1.5px #fff;
   background: #fff;
   color: #000;
+  border-radius: 5%;
 }
 
 .btn-signature-dark{
-  border:solid 2px #000;
-  background: #000;
-  color: #fff;
+  border:solid 1.5px #222;
+  background: transparent;
+  color: #222;
 }
 .btn-signature-dark:hover{
-  border:solid 2px #000;
-  background: transparent;
-  color: #000;
+  border:solid 1.5px #63bb82;
+  background: #63bb82;
+  color: #fff;
+    -webkit-transition: all .1s linear;
+     -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+     -o-transition: all .1s linear;
+      transition: all .1s linear;
 }
 
 .btn-signature-color{
-  border:solid 2px;
+  border:solid 1.5px;
   background: transparent;
 }
 .btn-signature-color:hover{
-  border:solid 2px;
+  border:solid 1.5px;
   color: #fff;
 }
 .add-top{
@@ -702,6 +904,19 @@ display: none;
 }
 .add-bottom-half{
     margin-bottom: 40px;
+}
+.add-bottom-60{
+    margin-bottom: 60px;
+}
+
+.add-top-10{
+    margin-top: 10%;
+}
+.add-bottom-100{
+    margin-bottom: 100px;
+}
+.add-top-100{
+    margin-top: 20%;
 }
 .add-top-quarter{
     margin-top: 20px;
@@ -726,6 +941,11 @@ display: none;
 }
 .pad-bottom-quarter{
     padding-bottom: 20px;
+}
+
+.pad-sides{
+    padding-left: 30px;
+	padding-right: 30px;
 }
 .ease{
             -webkit-transition: all .4s linear;
@@ -786,26 +1006,48 @@ display: none;
 /*LESS Compiled to CSS for preview purposes only 
 (Please read PDF guide to manage colors via LESS with just a single line of code editing)*/
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
 .color {
-  color: #2da86b;
+  color: #FF51ED;
+}
+
+.dark-blue {
+color: #23FFE1;
 }
 .white {
-  color: #ffffff;
+  color: #fff;
+}
+
+.blue {
+  color: #5FEFDE;
+}
+
+.palepink {
+	color: #FF93F2;
+}
+
+.p-color {
+	color: #C6FFF6;
+}
+.pink {
+  color: #C6FFF6;
 }
 .silver {
   color: #f1f1ef;
 }
 .grey {
-  color: #aaaaaa;
+  color: #999999;
 }
 .dark {
-  color: #222222;
+  color: #111;
 }
 .black {
   color: #121212;
 }
 .color-bg {
-  background-color: #2da86b;
+  background-color: #C6FFF6;
 }
 .white-bg {
   background-color: #ffffff;
@@ -814,7 +1056,7 @@ display: none;
   background-color: #f1f1ef;
 }
 .grey-bg {
-  background-color: #cccccc;
+  background-color: #999999;
 }
 .dark-bg {
   background-color: #292929;
@@ -822,19 +1064,22 @@ display: none;
 .black-bg {
   background-color: #121212;
 }
+.mint-bg {
+  background-color: #DAEFE1;
+}
 a {
   color: #121212;
 }
 a:hover {
-  color: #2da86b;
+  color: #FF51ED;
 }
 ::selection {
-  background: #2da86b;
-  color: #ffffff;
+  background: #FF51ED;
+  color: #111;
 }
 ::-moz-selection {
-  background: #2da86b;
-  color: #ffffff;
+  background: #FF51ED;
+  color: #111;
 }
 body,
 p {
@@ -848,8 +1093,12 @@ p {
 }
 .navigation a:hover,
 .social-icons li a:hover span {
-  color: #2da86b;
+  color: #63bb82;
 }
+.navigation a:hover,
+.social-icons-big li a:hover span {
+  color: #23FFE1;
+  text-shadow: 0 0 10px #63FFEA;
 .content-list li span {
   border-color: #cccccc;
 }
@@ -870,45 +1119,27 @@ nav#nav-mobile a:hover {
   border-color: #f1f1ef;
 }
 .font1 {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Anonymous Pro';
 }
 .font2 {
-  font-family: 'Muli', sans-serif;
-}
-.font3 {
-  font-family: 'Muli', sans-serif;
-}
-.font4 {
-  font-family: 'Muli', sans-serif;
-}
-.font4thin {
-  font-family: 'Muli', sans-serif;
-}
-.font4light {
-  font-family: 'Muli', sans-serif;
-}
-.font4bold {
-  font-family: 'Muli', sans-serif;
-}
-.font4black {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Orbitron';
 }
 body,
 p {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Anonymous Pro';
 }
 nav#nav-mobile a {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Quicksand';
 }
 .niceGallery ul.entries-columns li h4,
 .viewbox .panel .number,
 .viewbox .panel h3 {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Quicksand';
 }
 .niceGallery ul.entries-columns li a .show {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Quicksand';
 }
 .viewbox .details h2 {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Quicksand';
 }
 
