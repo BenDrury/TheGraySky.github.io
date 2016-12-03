@@ -117,7 +117,7 @@ a:focus {
 	  text-shadow: 0 0 5px #FF51ED;
       padding: 5px;
       font-family: 'Anonymous Pro';
-	font-size:24px;
+	font-size:20px;
 	line-height:30px;
 	font-weight:normal;
 	letter-spacing: 1px;
@@ -252,7 +252,7 @@ footer.mastfoot.signature-phil{
   display: inline;
   margin-top:-5px;
   margin-bottom:-5px;
-  margin-right:40px;
+  margin-right:30px;
 }
 .social-icons-big li a span{
   font-size: 65px;
